@@ -1,0 +1,32 @@
+.btn {
+	min-width: 190px;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: transparent;
+	border-style: solid;
+	padding: var(--spacing-3) var(--spacing-2);
+	cursor: pointer;
+	transition: background-color 200ms ease-out;
+}
+.btn-primary {
+	background-color: var(--blue-300);
+	color: var(--primary-white);
+}
+.btn-primary:hover {
+	background-color: var(--blue-400);
+}
+.btn-secondary {
+	background-color: var(--yellow-300);
+	color: var(--primary-dark);
+}
+.btn-secondary:hover {
+	background-color: var(--yellow-400);
+}
+.btn-tertiary {
+	background-color: var(--primary-light);
+	color: var(--primary-dark);
+}
+.btn-ghost {
+	background-color: transparent;
+	border-color: var(--primary-white);
+}

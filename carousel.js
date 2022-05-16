@@ -1,7 +1,5 @@
 const homepageCarousel = new Swiper(".concerts", {
-	slidesPerView: 4,
 	initialSlide: 3,
-	spaceBetween: 30,
 	centeredSlides: true,
 	grabCursor: true,
 	effect: "coverflow",
@@ -15,5 +13,14 @@ const homepageCarousel = new Swiper(".concerts", {
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
+	},
+	slidesPerView: 1,
+	breakpoints: {
+		460: {
+			slidesPerView: 2,
+		},
+		720: {
+			slidesPerView: 3,
+		},
 	},
 });

@@ -18,27 +18,32 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
+		<link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
 		<!-- Styles -->
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/buttons.css" />
 		<link rel="stylesheet" href="./styles/homepage.css" />
 	</head>
 	<body>
 		<header>
-			<section id="welcome" class="container p-5">
+			<section id="welcome" class="container pb-5">
 				<h1 class="mb-4">
 					welcome
 					<br />
 					to voxhall
 				</h1>
-				<p class="mb-2">An amazing video in the background</p>
-				<button class="mb-2">Book now</button>
+				<p class="mb-4">
+					An amazing video in the background and some very good description that
+					we have here that impresses everyone. Nice!
+				</p>
+				<button class="mb-2 btn btn-primary">Book now</button>
 			</section>
 		</header>
 		<main class="container">
-			<section>
-				<h2>Upcoming aritsts</h2>
-				<div class="swiper concerts">
+			<section id="concerts">
+				<h2 class="my-5 h4 text-center text-uppercase">Upcoming aritsts</h2>
+				<div class="swiper concerts pb-5">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">Slide 1</div>
 						<div class="swiper-slide">Slide 2</div>
@@ -48,8 +53,23 @@
 						<div class="swiper-slide">Slide 6</div>
 						<div class="swiper-slide">Slide 7</div>
 					</div>
-
 					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section id="craft-beer" class="row flex-center x-between">
+				<div class="col-xs-12 col-md-6 mb-4">
+					<h2 class="h4 text-uppercase mb-4">our craft beer</h2>
+					<p class="mb-4">
+						Some fun facts about that beer yess that and amazing beer
+					</p>
+					<button class="btn btn-secondary">Click me</button>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<img
+						class="w-100"
+						src="https://via.placeholder.com/400x520"
+						alt="Beer name"
+					/>
 				</div>
 			</section>
 		</main>

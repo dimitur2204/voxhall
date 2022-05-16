@@ -7,12 +7,15 @@ header {
 	align-items: flex-end;
 }
 
+.concerts .swiper-pagination-bullet-active {
+	background-color: var(--primary-dark);
+}
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	background: #d3d3d3;
 	height: 250px;
-
+	width: 300px;
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
