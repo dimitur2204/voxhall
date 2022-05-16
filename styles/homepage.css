@@ -1,0 +1,8 @@
+header {
+	background: url("https://via.placeholder.com/1280x720");
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	display: flex;
+	align-items: flex-end;
+}
