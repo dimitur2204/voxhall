@@ -22,11 +22,18 @@
 .btn-secondary:hover {
 	background-color: var(--yellow-400);
 }
+/* Needs hover */
 .btn-tertiary {
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
+/* Needs hover */
 .btn-ghost {
 	background-color: transparent;
 	border-color: var(--primary-white);
+}
+/* Needs hover */
+.btn-dark {
+	background-color: var(--primary-dark);
+	color: var(--primary-white);
 }
