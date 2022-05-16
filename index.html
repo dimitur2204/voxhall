@@ -13,6 +13,11 @@
 			href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- External styles -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
 		<!-- Styles -->
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/global.css" />
@@ -21,7 +26,7 @@
 	<body>
 		<header>
 			<section id="welcome" class="container p-5">
-				<h1 class="mb-2">
+				<h1 class="mb-4">
 					welcome
 					<br />
 					to voxhall
@@ -30,5 +35,25 @@
 				<button class="mb-2">Book now</button>
 			</section>
 		</header>
+		<main class="container">
+			<section>
+				<h2>Upcoming aritsts</h2>
+				<div class="swiper concerts">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide">Slide 5</div>
+						<div class="swiper-slide">Slide 6</div>
+						<div class="swiper-slide">Slide 7</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+		</main>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./carousel.js"></script>
 	</body>
 </html>

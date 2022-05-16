@@ -17,8 +17,17 @@
 	--spacing-4: 36px;
 	--spacing-5: 52px;
 }
+@media screen and (max-width: 460px) {
+	:root {
+		--spacing-1: 6px;
+		--spacing-2: 8px;
+		--spacing-3: 12px;
+		--spacing-4: 20px;
+		--spacing-5: 36px;
+	}
+}
 html {
-	font-size: 10px;
+	font-size: 12px;
 }
 /* Responsive typography */
 @media screen and (min-width: 460px) {
