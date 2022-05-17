@@ -17,6 +17,8 @@
 	--spacing-4: 36px;
 	--spacing-5: 52px;
 	--section-spacing: 80px;
+	--body-color: var(--primary-white);
+	--body-text: var(--primary-black);
 }
 @media screen and (max-width: 460px) {
 	:root {
@@ -46,6 +48,8 @@ html {
 body {
 	font-family: "Maven Pro", sans-serif;
 	font-size: 1.2rem;
+	background-color: var(--body-color);
+	color: var(--body-text);
 }
 h1,
 h2,
