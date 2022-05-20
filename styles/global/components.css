@@ -76,3 +76,68 @@
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 }
+
+/* Mobile Nav styles */
+.mobile-navbar {
+	background-color: rgba(0, 0, 0, 0.3); /* Black background color */
+	position: fixed; /* Make it stick/fixed */
+	width: 100%; /* Full width */
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--spacing-2);
+}
+.mobile-navbar #logo {
+	width: 95px;
+}
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 256px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0;
+	display: none;
+}
+
+.slideout-menu-left {
+	left: 0;
+}
+
+.slideout-menu-right {
+	right: 0;
+}
+
+#overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	z-index: 4;
+	display: none;
+}
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+	will-change: transform;
+	min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+#menu a {
+	margin: var(--spacing-2);
+	display: block;
+	text-decoration: none;
+}

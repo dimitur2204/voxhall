@@ -18,7 +18,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="stylesheet" href="./styles/pages/photography.css" />
 		<script
 			src="https://kit.fontawesome.com/5fcbc46ad6.js"
@@ -33,17 +33,29 @@
 				<div class="grid-wrapper">
 					<div>
 						<div class="number-box">#1</div>
-						<img
-							src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-							alt=""
-						/>
+						<a
+							href="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
+							data-fslightbox="gallery"
+						>
+							<img
+								data-lightbox="roadtrip"
+								src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
+								alt=""
+							/>
+						</a>
 					</div>
 					<div>
 						<div class="number-box">#2</div>
-						<img
-							src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
-							alt=""
-						/>
+						<a
+							href="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
+							data-fslightbox="gallery"
+						>
+							<img
+								data-lightbox="roadtrip"
+								src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
+								alt=""
+							/>
+						</a>
 					</div>
 					<div>
 						<div class="number-box">#3</div>
@@ -215,8 +227,10 @@
 				</div>
 			</section>
 		</main>
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-		<script src="./scripts/carousel.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+		<script src="./scripts/vendor/fslightbox.js"></script>
+		<script src="./scripts/nav.js"></script>
+		<script src="./scripts/images.js"></script>
 		<script src="./scripts/theme.js"></script>
 	</body>
 </html>
