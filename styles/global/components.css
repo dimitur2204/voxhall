@@ -31,6 +31,7 @@
 .btn-ghost {
 	background-color: transparent;
 	border-color: var(--primary-white);
+	color: var(--primary-white);
 }
 /* Needs hover */
 .btn-dark {

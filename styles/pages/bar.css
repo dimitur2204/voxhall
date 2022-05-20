@@ -1,0 +1,44 @@
+header {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("https://via.placeholder.com/1280x720");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+}
+.beers .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+.beers .swiper-pagination-bullet {
+	background-color: var(--body-text);
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#menu h4 {
+	font-family: var(--font-body);
+	margin-bottom: var(--spacing-3);
+	font-weight: 500;
+}
+#menu .beer-name {
+	font-size: 1.3rem;
+	margin-bottom: var(--spacing-1);
+}
+#menu .type {
+	font-size: 1rem;
+	margin-bottom: var(--spacing-2);
+}
+#menu .beer-info:last-child {
+	margin-bottom: var(--spacing-2);
+}

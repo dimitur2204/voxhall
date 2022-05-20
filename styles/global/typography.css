@@ -4,7 +4,7 @@ html {
 /* Responsive typography */
 @media screen and (min-width: 460px) {
 	html {
-		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+		font-size: calc(13px + 6 * ((100vw - 320px) / 680));
 	}
 }
 @media screen and (min-width: 1000px) {
@@ -13,7 +13,7 @@ html {
 	}
 }
 body {
-	font-family: "Maven Pro", sans-serif;
+	font-family: var(--font-body);
 	font-size: 1.2rem;
 }
 h1,
@@ -21,7 +21,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: "adrianna", sans-serif;
+	font-family: var(--font-headings);
 	font-style: italic;
 	font-weight: 800;
 }

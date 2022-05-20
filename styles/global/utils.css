@@ -16,6 +16,15 @@ main section:not(:last-child) {
 .w-100 {
 	width: 100%;
 }
+.w-80 {
+	width: 80%;
+}
+.w-60 {
+	width: 60%;
+}
+.w-40 {
+	width: 40%;
+}
 .flex-center {
 	display: flex;
 	justify-content: center;

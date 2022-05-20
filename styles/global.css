@@ -5,6 +5,8 @@
 @import url("./global/utils.css");
 
 :root {
+	--font-body: "Maven Pro", sans-serif;
+	--font-headings: "adrianna", sans-serif;
 	--primary-white: #fff;
 	--primary-black: #000;
 	--primary-dark: #292b29;
@@ -40,4 +42,7 @@
 body {
 	background-color: var(--body-color);
 	color: var(--body-text);
+}
+.container {
+	margin: 0 auto;
 }
