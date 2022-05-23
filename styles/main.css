@@ -25,7 +25,7 @@
 	--spacing-4: 36px;
 	--spacing-5: 52px;
 	--section-spacing: 40px;
-	--body-color: var(--primary-black);
+	--body-color: var(--primary-dark);
 	--body-text: var(--primary-white);
 }
 @media screen and (max-width: 460px) {

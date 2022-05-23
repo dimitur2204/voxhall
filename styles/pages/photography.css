@@ -4,12 +4,21 @@ header {
 			rgba(0, 0, 0, 0.5326724439775911) 0%,
 			rgba(45, 45, 45, 0.16292454481792717) 100%
 		),
-		url("https://via.placeholder.com/1280x720");
+		url("../../public/dj-photo.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 70vh;
 	display: flex;
 	align-items: flex-end;
+}
+@media screen and (max-width: 720px) {
+	header {
+		height: 55vh;
+	}
+}
+#welcome h1 {
+	text-shadow: -5px 2px 1px #a4a3fc, -6px 2px 1px #8684fb, -7px 2px 1px #6765fa,
+		-8px 2px 1px #4946f9;
 }
 main h1 {
 	margin-top: var(--section-spacing);

@@ -12,6 +12,11 @@ header {
 	position: relative;
 	overflow: hidden;
 }
+@media screen and (max-width: 720px) {
+	header {
+		height: 55vh;
+	}
+}
 #welcome {
 	z-index: 1;
 }
