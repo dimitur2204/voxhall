@@ -27,12 +27,23 @@
 	</head>
 	<body>
 		<nav id="menu" class="">
-			<button id="nav-close" class="btn btn-dark btn-icon">
-				<i class="fa fa-x"></i>
-			</button>
-			<button id="theme-switch" class="btn btn-dark btn-icon">
-				<i class="fa fa-palette"></i>
-			</button>
+			<div class="d-x x-end">
+				<button
+					id="theme-switch"
+					class="btn btn-dark btn-icon"
+					aria-label="Change color theme"
+				>
+					<i class="fa fa-sun"></i>
+				</button>
+				<button
+					id="nav-close"
+					class="btn btn-icon-ghost"
+					aria-label="Close nav"
+				>
+					<i class="fa fa-arrow-right"></i>
+				</button>
+			</div>
+
 			<ul>
 				<li>
 					<a class="pt-3 pb-3" href="bar.html">Bar</a>
@@ -51,7 +62,12 @@
 				<a href="index.html" id="logo">
 					<img src="./public/icons/logo-modern-white.svg" alt="Voxhall" />
 				</a>
-				<button id="nav-toggle" class="btn btn-dark btn-icon">
+				<button
+					id="nav-toggle"
+					class="btn btn-dark btn-icon"
+					aria-haspopup="menu"
+					aria-label="Open hamburger menu"
+				>
 					<i class="fa fa-bars"></i>
 				</button>
 			</nav>
@@ -67,7 +83,6 @@
 						that we have here that impresses everyone. Nice!
 					</p>
 					<button class="mb-2 btn btn-dark">Book now</button>
-					<button id="nav-toggle" class="mb-2 btn btn-primary">Drawer</button>
 				</section>
 			</header>
 			<main>
@@ -75,13 +90,106 @@
 					<h2 class="my-5 h4 text-center text-uppercase">Upcoming aritsts</h2>
 					<div class="swiper concerts pb-5">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">Slide 1</div>
-							<div class="swiper-slide">Slide 2</div>
-							<div class="swiper-slide">Slide 3</div>
-							<div class="swiper-slide">Slide 4</div>
-							<div class="swiper-slide">Slide 5</div>
-							<div class="swiper-slide">Slide 6</div>
-							<div class="swiper-slide">Slide 7</div>
+							<div
+								class="swiper-slide card"
+								style="
+									background: linear-gradient(
+											180deg,
+											rgba(27, 72, 247, 0.5427564775910365) 0%,
+											rgba(0, 24, 54, 1) 100%
+										),
+										url('./public/concert-cards/card-1.jpg');
+								"
+							>
+								<h4 class="mb-1 text-uppercase">John Grant</h4>
+								<div class="d-x x-between">
+									<div class="text">
+										<p class="date mb-1">07.06.2022</p>
+										<p class="time">20:00</p>
+									</div>
+									<a class="btn btn-ghost small">Tickets</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide card"
+								style="
+									background: linear-gradient(
+											180deg,
+											rgba(27, 72, 247, 0.5427564775910365) 0%,
+											rgba(0, 24, 54, 1) 100%
+										),
+										url('./public/concert-cards/card-2.jpg');
+								"
+							>
+								<h4 class="mb-1 text-uppercase">John Grant</h4>
+								<div class="d-x x-between">
+									<div class="text">
+										<p class="date mb-1">07.06.2022</p>
+										<p class="time">20:00</p>
+									</div>
+									<a class="btn btn-ghost small">Tickets</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide card"
+								style="
+									background: linear-gradient(
+											180deg,
+											rgba(27, 72, 247, 0.5427564775910365) 0%,
+											rgba(0, 24, 54, 1) 100%
+										),
+										url('./public/concert-cards/card-3.jpg');
+								"
+							>
+								<h4 class="mb-1 text-uppercase">John Grant</h4>
+								<div class="d-x x-between">
+									<div class="text">
+										<p class="date mb-1">07.06.2022</p>
+										<p class="time">20:00</p>
+									</div>
+									<a class="btn btn-ghost small">Tickets</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide card"
+								style="
+									background: linear-gradient(
+											180deg,
+											rgba(27, 72, 247, 0.5427564775910365) 0%,
+											rgba(0, 24, 54, 1) 100%
+										),
+										url('./public/concert-cards/card-4.jpg');
+								"
+							>
+								<h4 class="mb-1 text-uppercase">John Grant</h4>
+								<div class="d-x x-between">
+									<div class="text">
+										<p class="date mb-1">07.06.2022</p>
+										<p class="time">20:00</p>
+									</div>
+									<a class="btn btn-ghost small">Tickets</a>
+								</div>
+							</div>
+							<div
+								class="swiper-slide card"
+								style="
+									background: linear-gradient(
+											180deg,
+											rgba(27, 72, 247, 0.5427564775910365) 0%,
+											rgba(0, 24, 54, 1) 100%
+										),
+										url('./public/concert-cards/card-5.jpg');
+								"
+							>
+								<h4 class="mb-1 text-uppercase">John Grant</h4>
+								<div class="d-x x-between">
+									<div class="text">
+										<p class="date mb-1">07.06.2022</p>
+										<p class="time">20:00</p>
+									</div>
+									<a class="btn btn-ghost small">Tickets</a>
+								</div>
+							</div>
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
@@ -96,22 +204,18 @@
 						<button class="mb-2 btn btn-dark">Book now</button>
 					</article>
 				</section>
-				<section id="craft-beer" class="container row flex-center x-between">
-					<div class="col-xs-12 col-md-6 mb-4">
-						<h2 class="h4 text-uppercase mb-4">our craft beer</h2>
-						<p class="mb-4">
-							Some fun facts about that beer yess that and amazing beer
-						</p>
-						<button class="btn btn-primary">Click me</button>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<img
-							class="w-100"
-							src="https://via.placeholder.com/400x520"
-							alt="Beer name"
-						/>
+				<section class="beer-bg">
+					<div id="craft-beer" class="container row flex-center x-between">
+						<div class="col-xs-12 col-md-6 mb-4">
+							<h2 class="h1 text-uppercase mb-4">our craft beer bar</h2>
+							<p class="mb-4">
+								Some fun facts about that beer yess that and amazing beer
+							</p>
+							<button class="btn btn-primary">Click me</button>
+						</div>
 					</div>
 				</section>
+
 				<section class="guide-bg">
 					<div id="guide" class="container pb-5">
 						<div class="blur-box text-center">

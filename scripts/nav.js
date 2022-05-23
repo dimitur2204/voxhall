@@ -1,5 +1,5 @@
+const navbar = document.querySelector(".mobile-navbar");
 function scrollFunction() {
-	const navbar = document.querySelector(".mobile-navbar");
 	if (document.documentElement.scrollTop > 20) {
 		navbar.style.top = "0";
 	} else {
@@ -16,19 +16,14 @@ var slideout = new Slideout({
 	tolerance: 70,
 	easing: "cubic-bezier(.32,2,.55,.27)",
 	side: "right",
-	onClose: () => {
-		overlay.style.display = "none";
-	},
+	touch: false,
 });
 
 const overlay = document.getElementById("overlay");
 // Toggle button
 document.querySelector("#nav-toggle").addEventListener("click", function () {
-	slideout.toggle();
-	const panel = document.getElementById("panel");
-	if (slideout.isOpen()) {
-		overlay.style.display = "block";
-	}
+	slideout.open();
+	document.querySelector("menu>a").focus();
 });
 document.querySelector("#nav-close").addEventListener("click", function () {
 	slideout.close();

@@ -18,53 +18,72 @@ header {
 .concerts .swiper-pagination-bullet {
 	background-color: var(--body-text);
 }
+.swiper-wrapper {
+	box-sizing: border-box;
+}
 .swiper-slide {
+	border-radius: 6px;
+	padding: var(--spacing-2);
+	background-position: center !important;
+	background-size: cover !important;
 	text-align: center;
-	font-size: 18px;
-	background: #d3d3d3;
-	height: 250px;
-	width: 300px;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+	height: 280px;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
+	flex-direction: column;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-align-items: space-between;
+	align-items: space-between;
+}
+.swiper-slide h4 {
+	text-align: left;
+	font-size: 2rem;
+}
+.swiper-slide .time,
+.swiper-slide .date {
+	font-size: 0.7rem;
+	text-align: left;
+}
+.beer-bg {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.9267900910364145) 0%,
+			rgba(0, 0, 0, 0.15) 100%
+		),
+		url("../../public/beer-taps.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
 	align-items: center;
 }
-
 .pictures-bg {
 	background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.4326724439775911) 0%,
 			rgba(45, 45, 45, 0.16292454481792717) 100%
 		),
-		url("https://via.placeholder.com/1280x720");
+		url("../../public/photos.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 85vh;
 	display: flex;
 	align-items: flex-end;
 }
-
 .guide-bg {
 	background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.4326724439775911) 0%,
 			rgba(45, 45, 45, 0.16292454481792717) 100%
 		),
-		url("https://via.placeholder.com/1280x720");
+		url("../../public/guide.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 70vh;
 	display: flex;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: center;
 }
 
 #guide .blur-box {
@@ -73,6 +92,7 @@ header {
 	padding: var(--spacing-4);
 	width: 80%;
 	margin: 0 auto;
+	border-radius: 6px;
 }
 #guide p {
 	margin: 0 auto;
@@ -85,5 +105,6 @@ header {
 	#guide .blur-box {
 		padding: var(--spacing-3);
 		width: 100%;
+		border-radius: 6px;
 	}
 }
