@@ -1,3 +1,8 @@
+a {
+	text-decoration: none;
+	color: var(--body-text);
+	font-size: 1rem;
+}
 .btn {
 	min-width: 190px;
 	border-radius: 6px;
@@ -79,14 +84,18 @@
 
 /* Mobile Nav styles */
 .mobile-navbar {
-	background-color: rgba(0, 0, 0, 0.3); /* Black background color */
+	background-color: var(--body-color); /* Black background color */
+	color: var(--body-text); /* Black background color */
 	position: fixed; /* Make it stick/fixed */
+	top: 0;
+	/* height: 300px; */
 	width: 100%; /* Full width */
 	transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: var(--spacing-2);
+	z-index: 10;
 }
 .mobile-navbar #logo {
 	width: 95px;
@@ -110,19 +119,9 @@
 .slideout-menu-right {
 	right: 0;
 }
-
-#overlay {
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	position: absolute;
-	height: 100%;
-	z-index: 4;
-	display: none;
-}
 .slideout-panel {
 	position: relative;
 	z-index: 1;
-	will-change: transform;
 	min-height: 100vh;
 }
 
@@ -136,8 +135,16 @@
 	display: block;
 }
 
+#menu {
+	padding: var(--spacing-2);
+	border-radius: 10px;
+}
 #menu a {
-	margin: var(--spacing-2);
 	display: block;
 	text-decoration: none;
+	text-align: center;
+}
+
+#menu li:hover {
+	background-color: rgba(25, 25, 25, 1);
 }

@@ -1,18 +1,14 @@
 function scrollFunction() {
 	const navbar = document.querySelector(".mobile-navbar");
-	console.log(document.documentElement.scrollTop);
 	if (document.documentElement.scrollTop > 20) {
-		console.log("show");
 		navbar.style.top = "0";
-		navbar.style.position = "sticky";
 	} else {
-		console.log("hide");
-		navbar.style.position = "fixed";
-		navbar.style.top = "-50px";
+		navbar.style.top = "-90px";
 	}
 }
 
 window.addEventListener("scroll", scrollFunction);
+window.addEventListener("load", scrollFunction);
 var slideout = new Slideout({
 	panel: document.getElementById("panel"),
 	menu: document.getElementById("menu"),
@@ -20,6 +16,9 @@ var slideout = new Slideout({
 	tolerance: 70,
 	easing: "cubic-bezier(.32,2,.55,.27)",
 	side: "right",
+	onClose: () => {
+		overlay.style.display = "none";
+	},
 });
 
 const overlay = document.getElementById("overlay");
@@ -33,5 +32,4 @@ document.querySelector("#nav-toggle").addEventListener("click", function () {
 });
 document.querySelector("#nav-close").addEventListener("click", function () {
 	slideout.close();
-	overlay.style.display = "none";
 });
