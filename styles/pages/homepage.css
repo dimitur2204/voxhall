@@ -1,15 +1,29 @@
 header {
 	background: linear-gradient(
-			180deg,
-			rgba(0, 0, 0, 0.5326724439775911) 0%,
-			rgba(45, 45, 45, 0.16292454481792717) 100%
-		),
-		url("https://via.placeholder.com/1280x720");
+		180deg,
+		rgba(0, 0, 0, 0.5326724439775911) 0%,
+		rgba(45, 45, 45, 0.16292454481792717) 100%
+	);
 	background-size: cover;
 	background-position: center;
 	height: 70vh;
 	display: flex;
 	align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+}
+#welcome {
+	z-index: 1;
+}
+video {
+	/** Simulationg background-size: cover */
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	filter: brightness(0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .concerts .swiper-pagination-bullet-active {
 	background-color: var(--body-text);
@@ -57,6 +71,31 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+#craft-beer h2:first-child {
+	text-shadow: -4px 2px 1px #f9c6c2, -5px 2px 1px #f6aaa4, -6px 2px 1px #f28d86,
+		-7px 2px 1px #ef7167, -8px 2px 1px #ec5449;
+}
+#craft-beer h2:nth-child(2) {
+	text-shadow: -4px 2px 1px #c2c1fd, -5px 2px 1px #a4a3fc, -6px 2px 1px #8684fb,
+		-7px 2px 1px #6765fa, -8px 2px 1px #4946f9;
+}
+.lightning-box {
+	position: relative;
+}
+.lightning-1 {
+	position: absolute;
+	top: -65px;
+	left: 45px;
+	width: 40px;
+	height: 40px;
+}
+.lightning-2 {
+	position: absolute;
+	top: -35px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
 }
 .pictures-bg {
 	background: linear-gradient(

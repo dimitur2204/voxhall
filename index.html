@@ -72,6 +72,28 @@
 				</button>
 			</nav>
 			<header>
+				<video playsinline autoplay muted loop poster="./public/guide.jpg">
+					<source src="./public/frontpage_video.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+				<nav class="desktop-navbar container d-x x-between">
+					<ul>
+						<li class="mr-2">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="mr-2">
+							<a href="concerts.html">Concerts</a>
+						</li>
+						<li class="mr-2">
+							<a href="bar.html">Bar</a>
+						</li>
+						<li>
+							<a href="photography.html">Gallery</a>
+						</li>
+					</ul>
+					<img src="./public/icons/logo-modern-white.svg" alt="Voxhall" />
+					<button class="btn btn-blur small">Contact us</button>
+				</nav>
 				<section id="welcome" class="container pb-5">
 					<h1 class="mb-4">
 						welcome
@@ -82,11 +104,11 @@
 						An amazing video in the background and some very good description
 						that we have here that impresses everyone. Nice!
 					</p>
-					<button class="mb-2 btn btn-dark">Book now</button>
+					<button class="mb-2 btn btn-primary">Book now</button>
 				</section>
 			</header>
 			<main>
-				<section id="concerts" class="container">
+				<section id="concerts" class="container m-0">
 					<h2 class="my-5 h4 text-center text-uppercase">Upcoming aritsts</h2>
 					<div class="swiper concerts pb-5">
 						<div class="swiper-wrapper">
@@ -194,20 +216,35 @@
 						<div class="swiper-pagination"></div>
 					</div>
 				</section>
-				<section class="pictures-bg">
+				<section class="pictures-bg m-0">
 					<article id="pictures" class="container pb-5">
 						<h2 class="mb-4 h1">voxhall in pictures</h2>
 						<p class="mb-4 w-60">
 							An amazing video in the background and some very good description
 							that we have here that impresses everyone. Nice!
 						</p>
-						<button class="mb-2 btn btn-dark">Book now</button>
+						<button class="mb-2 btn btn-ghost">Book now</button>
 					</article>
 				</section>
-				<section class="beer-bg">
+				<section class="beer-bg m-0">
 					<div id="craft-beer" class="container row flex-center x-between">
 						<div class="col-xs-12 col-md-6 mb-4">
-							<h2 class="h1 text-uppercase mb-4">our craft beer bar</h2>
+							<div class="lightning-box">
+								<img
+									class="lightning-1"
+									src="./public/lightning.svg"
+									aria-disabled="true"
+								/>
+								<img
+									class="lightning-2"
+									src="./public/lightning-sharp.svg"
+									aria-disabled="true"
+								/>
+								<div class="text-uppercase mb-4">
+									<h2 class="h1">our craft</h2>
+									<h2 class="h1">beer bar</h2>
+								</div>
+							</div>
 							<p class="mb-4">
 								Some fun facts about that beer yess that and amazing beer
 							</p>
@@ -216,7 +253,7 @@
 					</div>
 				</section>
 
-				<section class="guide-bg">
+				<section class="guide-bg m-0">
 					<div id="guide" class="container pb-5">
 						<div class="blur-box text-center">
 							<h2 class="mb-4 h1">Check out our guide</h2>

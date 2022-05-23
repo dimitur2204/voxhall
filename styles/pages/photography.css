@@ -1,11 +1,30 @@
+header {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("https://via.placeholder.com/1280x720");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+}
 main h1 {
 	margin-top: var(--section-spacing);
 }
 #photos {
 	margin-top: var(--section-spacing);
 }
+#photos a {
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
 #photos img {
 	max-width: 100%;
+	max-height: 100%;
 	vertical-align: middle;
 	display: inline-block;
 	transition: transform 500ms ease-out;

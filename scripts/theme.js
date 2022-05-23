@@ -13,7 +13,6 @@
 
 	function setVariable(variable, value) {
 		document.documentElement.style.setProperty(variable, value);
-		console.log(document.documentElement.style);
 	}
 
 	themeSwitch.addEventListener("click", () => {

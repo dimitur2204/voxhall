@@ -1,8 +1,8 @@
 @import url("./global/reset.css");
 @import url("./vendor/bootstrap-grid.min.css");
-@import url("./global/components.css");
-@import url("./global/typography.css");
 @import url("./global/utils.css");
+@import url("./global/typography.css");
+@import url("./global/components.css");
 
 :root {
 	--font-body: "Maven Pro", sans-serif;
@@ -24,7 +24,7 @@
 	--spacing-3: 20px;
 	--spacing-4: 36px;
 	--spacing-5: 52px;
-	--section-spacing: 80px;
+	--section-spacing: 40px;
 	--body-color: var(--primary-black);
 	--body-text: var(--primary-white);
 }

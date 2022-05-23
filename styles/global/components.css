@@ -8,14 +8,19 @@ a:focus {
 	text-decoration: underline;
 }
 .btn {
-	min-width: 190px;
+	min-width: 170px;
 	border-radius: 6px;
 	border-width: 2px;
 	border-color: transparent;
 	border-style: solid;
-	padding: var(--spacing-3) var(--spacing-2);
+	padding: var(--spacing-2) var(--spacing-2);
 	cursor: pointer;
 	transition: background-color 200ms ease-out;
+}
+.btn-blur {
+	backdrop-filter: blur(8px);
+	background-color: rgba(125, 125, 125, 0.5);
+	color: var(--primary-white);
 }
 .btn.small {
 	padding: var(--spacing-1) var(--spacing-1);
@@ -170,4 +175,29 @@ a:focus {
 
 #menu li:hover {
 	background-color: var(--body-color);
+}
+
+.desktop-navbar {
+	position: absolute;
+	top: var(--spacing-3);
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.desktop-navbar img {
+	width: 180px;
+}
+.desktop-navbar ul {
+	display: flex;
+}
+@media screen and (min-width: 720px) {
+	.mobile-navbar {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.desktop-navbar {
+		display: none;
+	}
 }
