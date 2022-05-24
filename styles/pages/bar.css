@@ -4,19 +4,29 @@ header {
 			rgba(0, 0, 0, 0.5326724439775911) 0%,
 			rgba(45, 45, 45, 0.16292454481792717) 100%
 		),
-		url("https://via.placeholder.com/1280x720");
+		url("../../public/bar.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 70vh;
 	display: flex;
 	align-items: flex-end;
 }
+main > section {
+	margin: 0;
+}
+#beers {
+	padding: var(--spacing-5) 0;
+	color: var(--primary-dark);
+}
+#beers h2 {
+	margin-bottom: var(--spacing-4);
+}
 .beers .swiper-pagination-bullet-active {
-	background-color: var(--body-text);
+	background-color: var(--primary-dark);
 }
 
 .beers .swiper-pagination-bullet {
-	background-color: var(--body-text);
+	background-color: var(--primary-dark);
 }
 .swiper-slide {
 	text-align: center;
@@ -25,6 +35,24 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.prices {
+	padding: 0 var(--spacing-4);
+	margin-bottom: -65px;
+
+	position: relative;
+	z-index: 1;
+}
+.prices > p {
+	/* Prefix required. Even Firefox only supports the -webkit- prefix */
+	/* -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--primary-dark); */
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+#beers {
+	background-color: var(--primary-light);
 }
 .beer-name {
 	font-size: 1.3rem;
@@ -35,10 +63,10 @@ header {
 	margin-bottom: var(--spacing-2);
 }
 .line-title.short {
-	width: 120%;
+	width: 180%;
 }
 .line-title.tall .beer-info {
-	width: 150%;
+	width: 180%;
 }
 .beer-info:last-child {
 	margin-bottom: var(--spacing-2);
@@ -52,13 +80,17 @@ header {
 .line-title.short {
 	justify-content: flex-start;
 }
-.line-container {
+.lines-overlay {
 	background: linear-gradient(
 		180deg,
 		rgba(0, 0, 0, 1) 0%,
 		rgba(0, 0, 0, 0) 100%
 	);
-	margin-top: -65px;
+}
+.line-container {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: -125px;
 }
 #taps-line img {
 	width: 100%;
@@ -73,4 +105,37 @@ header {
 #taps-line .line.tall {
 	height: 120px;
 	width: 2px;
+}
+
+.blur {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(13px);
+	z-index: 0;
+}
+#burgers {
+	position: relative;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("../../public/burger.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+}
+
+#burgers .container {
+	z-index: 1;
+	position: relative;
+}
+#burgers img {
+	height: 320px;
+	width: 100%;
 }
