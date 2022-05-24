@@ -15,16 +15,19 @@ a:focus {
 	border-style: solid;
 	padding: var(--spacing-2) var(--spacing-2);
 	cursor: pointer;
-	transition: background-color 200ms ease-out;
+	transition: background-color 200ms ease-out, color 200ms ease-out;
 }
 .btn-blur {
 	backdrop-filter: blur(8px);
 	background-color: rgba(125, 125, 125, 0.5);
 	color: var(--primary-white);
 }
+.btn-blur:hover {
+	background-color: var(--blue-300);
+}
 .btn.small {
 	padding: var(--spacing-1) var(--spacing-1);
-	font-size: 1rem;
+	font-size: 0.8rem;
 	min-width: 120px;
 }
 .btn-primary {
@@ -46,11 +49,15 @@ a:focus {
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
-/* Needs hover */
+
 .btn-ghost {
 	background-color: transparent;
 	border-color: var(--primary-white);
 	color: var(--primary-white);
+}
+.btn-ghost:hover {
+	background-color: var(--primary-white);
+	color: var(--primary-dark);
 }
 /* Needs hover */
 .btn-dark {

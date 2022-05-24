@@ -37,10 +37,10 @@ main > section {
 	align-items: center;
 }
 .prices {
-	padding: 0 var(--spacing-4);
-	margin-bottom: -65px;
-
+	padding: 0 120px;
+	margin-bottom: -60px;
 	position: relative;
+	top: 65px;
 	z-index: 1;
 }
 .prices > p {
@@ -64,6 +64,9 @@ main > section {
 }
 .line-title.short {
 	width: 180%;
+}
+.line-title.tall {
+	height: 237px;
 }
 .line-title.tall .beer-info {
 	width: 180%;
@@ -90,20 +93,23 @@ main > section {
 .line-container {
 	width: 90%;
 	margin: 0 auto;
-	margin-top: -125px;
+	margin-top: -280px;
+
+	right: -35px;
+	position: relative;
 }
 #taps-line img {
 	width: 100%;
-	height: 100%;
+	height: 635px;
+	object-fit: cover;
 }
-#taps-line .line {
+#taps-line .line.short {
 	background-color: var(--primary-white);
-	height: 60px;
 	width: 2px;
 }
 
 #taps-line .line.tall {
-	height: 120px;
+	background-color: var(--primary-white);
 	width: 2px;
 }
 
@@ -135,7 +141,39 @@ main > section {
 	z-index: 1;
 	position: relative;
 }
-#burgers img {
-	height: 320px;
+
+#burgers .card {
+	position: relative;
+	background-position: center !important;
+	background-size: cover !important;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	text-align: left;
+	max-width: 100%;
+}
+
+#burgers .line {
+	height: 2px;
+	background-color: var(--primary-white);
 	width: 100%;
+	margin-bottom: var(--spacing-1);
+}
+
+#burgers .h5 {
+	font-size: 1.6rem;
+}
+
+#burgers .address {
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+#burgers .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+#burgers .swiper-pagination-bullet {
+	background-color: var(--body-text);
 }

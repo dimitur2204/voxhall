@@ -34,7 +34,7 @@ function barTapsAnimation() {
 		targets: ".line.tall",
 		easing: "easeOutCirc",
 		height: ["0", "120px"],
-		delay: anime.stagger(300, { start: 500 }),
+		delay: anime.stagger(300, { start: 300 }),
 	});
 	animeTimeline.add(
 		{
@@ -79,7 +79,6 @@ function barTapsAnimation() {
 barTapsAnimation();
 
 const burgerCarousel = new Swiper(".burgers", {
-	centeredSlides: true,
 	spaceBetween: 20,
 	grabCursor: true,
 	loop: true,

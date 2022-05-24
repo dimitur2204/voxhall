@@ -3,6 +3,7 @@ const homepageCarousel = new Swiper(".concerts", {
 	centeredSlides: true,
 	grabCursor: true,
 	effect: "coverflow",
+	loop: true,
 	coverflowEffect: {
 		rotate: 20,
 		stretch: 0,
