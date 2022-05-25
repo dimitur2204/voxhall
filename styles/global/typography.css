@@ -2,7 +2,7 @@ html {
 	font-size: 12px;
 }
 /* Responsive typography */
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 380px) {
 	html {
 		font-size: calc(13px + 6 * ((100vw - 320px) / 680));
 	}

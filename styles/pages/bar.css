@@ -112,6 +112,46 @@ main > section {
 	background-color: var(--primary-white);
 	width: 2px;
 }
+@media (max-width: 1200px) {
+	#taps-line {
+		display: none;
+	}
+	#taps-mobile {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	#taps-line {
+		display: block;
+	}
+	#taps-mobile {
+		display: none;
+	}
+}
+#taps-mobile {
+	background: url("../../public/bar-tap-beers.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+#taps-mobile .tap-img {
+	width: 60px;
+	height: 60px;
+}
+#taps-mobile .mobile-price {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+#taps-mobile .title {
+	font-size: 1.4rem;
+	margin-bottom: 4px;
+}
+
+#taps-mobile .type {
+	font-size: 0.9 rem;
+}
 
 .blur {
 	position: absolute;
@@ -134,7 +174,7 @@ main > section {
 	background-position: center;
 	height: 70vh;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 }
 
 #burgers .container {
