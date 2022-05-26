@@ -3,6 +3,14 @@ a {
 	color: var(--body-text);
 	font-size: 1rem;
 }
+
+footer{
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 a:active,
 a:focus {
 	text-decoration: underline;
