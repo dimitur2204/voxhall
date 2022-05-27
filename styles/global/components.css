@@ -213,3 +213,7 @@ i {
 		display: none;
 	}
 }
+
+footer h4 {
+	font-family: var(--body-text);
+}

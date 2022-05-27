@@ -1,14 +1,4 @@
 const navbar = document.querySelector(".mobile-navbar");
-function scrollFunction() {
-	if (document.documentElement.scrollTop > 20) {
-		navbar.style.top = "0";
-	} else {
-		navbar.style.top = "-90px";
-	}
-}
-
-window.addEventListener("scroll", scrollFunction);
-window.addEventListener("load", scrollFunction);
 var slideout = new Slideout({
 	panel: document.getElementById("panel"),
 	menu: document.getElementById("menu"),
