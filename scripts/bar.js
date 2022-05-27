@@ -78,6 +78,21 @@ function barTapsAnimation() {
 
 barTapsAnimation();
 
+const drinksCarousel = new Swiper(".drinks-menu", {
+	grabCursor: true,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	slidesPerView: 1,
+	centeredSlides: true,
+	effect: "fade",
+	fadeEffect: {
+		crossFade: true,
+	},
+});
+
 const burgerCarousel = new Swiper(".burgers", {
 	spaceBetween: 20,
 	grabCursor: true,

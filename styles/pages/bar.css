@@ -217,3 +217,63 @@ main > section {
 #burgers .swiper-pagination-bullet {
 	background-color: var(--body-text);
 }
+
+#drinks-menu {
+	position: relative;
+	background: url("../../public/beer-taps.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.drinks-content {
+	z-index: 1;
+	position: relative;
+}
+
+#drinks-menu .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+#drinks-menu .swiper-pagination-bullet {
+	background-color: var(--body-text);
+}
+#drinks-menu h3 {
+	background-color: var(--primary-white);
+	color: var(--primary-dark);
+	font-family: var(--font-body);
+	text-transform: uppercase;
+	padding: var(--spacing-2) var(--spacing-3);
+	text-align: left;
+}
+#drinks-menu .menu-title {
+	font-size: 1.3rem;
+	margin-bottom: var(--spacing-1);
+}
+#drinks-menu .swiper {
+	overflow: visible;
+}
+.menu-type {
+	font-size: 1rem;
+	margin-bottom: var(--spacing-2);
+}
+.menu-price {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.menu-beer-info {
+	text-align: left;
+}
+/* <div class="menu-card">
+		<h3 class="menu-title">Lager</h3>
+		<div class="d-x x-between">
+			<div class="menu-beer-info">
+				<p class="menu-title">Das Kolich</p>
+				<p class="menu-type">German-style Ale - 4.5%</p>
+			</div>
+			<div class="menu-price">35KR</div>
+		</div>
+	</div> */
+.menu-card {
+	border: 3px solid var(--primary-white);
+	min-width: 450px;
+}
