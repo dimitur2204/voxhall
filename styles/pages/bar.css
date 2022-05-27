@@ -275,5 +275,40 @@ main > section {
 	</div> */
 .menu-card {
 	border: 3px solid var(--primary-white);
-	min-width: 450px;
+	max-width: 690px;
+	width: 70%;
+	min-width: 320px;
+}
+
+#find-us {
+	background: linear-gradient(
+		180deg,
+		rgba(18, 17, 78, 1) 0%,
+		rgba(72, 68, 244, 1) 100%
+	);
+	position: relative;
+	height: 650px;
+}
+
+.faq-card {
+	padding: var(--spacing-3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid var(--body-text);
+	border-radius: 6px;
+	-webkit-box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
+	box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
+	max-width: 350px;
+	width: 100%;
+}
+
+#graphic {
+	width: 550px;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	bottom: 0;
+	top: 80%;
 }
