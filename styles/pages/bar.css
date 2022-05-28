@@ -287,7 +287,8 @@ main > section {
 		rgba(72, 68, 244, 1) 100%
 	);
 	position: relative;
-	height: 650px;
+	padding: var(--spacing-5) 0;
+	/* height: 650px; */
 }
 
 .faq-card {
@@ -308,7 +309,27 @@ main > section {
 	height: 100%;
 	position: absolute;
 	z-index: 0;
-	left: 0;
-	bottom: 0;
-	top: 80%;
+	left: -15%;
+	top: 30%;
 }
+.graph-wrapper {
+	position: relative;
+}
+/* absoolute postion #graphic to the bottom left of the container */
+.pin {
+	position: absolute;
+	top: -50px;
+	right: -30px;
+	z-index: 1;
+}
+/* @media screen and (max-width: 720px) {
+	#graphic {
+		width: 550px;
+		height: 100%;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		bottom: 0;
+		top: 10%;
+	}
+} */

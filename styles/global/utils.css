@@ -2,7 +2,7 @@ main section:not(:last-child) {
 	margin-bottom: var(--section-spacing);
 }
 .container {
-	max-width: 960px;
+	max-width: 1200px;
 }
 .text-uppercase {
 	text-transform: uppercase;

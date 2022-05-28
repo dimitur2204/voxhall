@@ -44,6 +44,7 @@ body {
 	height: 100%;
 	background-color: var(--body-color);
 	color: var(--body-text);
+	overflow-x: hidden;
 }
 .container {
 	margin: 0 auto;
