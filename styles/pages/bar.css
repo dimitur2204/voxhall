@@ -291,17 +291,23 @@ main > section {
 	/* height: 650px; */
 }
 
-.faq-card {
+.faq-card-all {
 	padding: var(--spacing-3);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	border: 1px solid var(--body-text);
 	border-radius: 6px;
 	-webkit-box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
 	box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
 	max-width: 350px;
 	width: 100%;
+}
+
+.faq-card-body {
+	display: none;
+}
+.faq-card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #graphic {
