@@ -27,7 +27,26 @@ main > section {
 .beers .swiper-pagination-bullet-active {
 	background-color: var(--primary-dark);
 }
-
+.faq-card-all {
+	cursor: pointer;
+	transition: background-color 200ms ease-out;
+	background-color: var(--blue-300);
+}
+.faq-card-all:hover {
+	background-color: var(--blue-400);
+}
+.faq-card-body {
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	font-weight: 100;
+	margin-top: var(--spacing-2);
+}
+.faq-card-body li {
+	margin-top: var(--spacing-1);
+}
+.faq-card-body li::before {
+	content: "•";
+}
 .beers .swiper-pagination-bullet {
 	background-color: var(--primary-dark);
 }
@@ -302,7 +321,6 @@ main > section {
 	box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
 	max-width: 350px;
 	width: 100%;
-	background-color: rgb(35, 33, 146);
 }
 
 .faq-card-body {
