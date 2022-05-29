@@ -67,6 +67,11 @@ img#camera-image {
 	#photos {
 		margin-bottom: 120px;
 	}
+	#show-more {
+		position: relative;
+		top: 120px;
+		z-index: 2;
+	}
 	img#camera-image {
 		position: absolute;
 		top: 95%;
