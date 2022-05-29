@@ -17,6 +17,9 @@ a:focus {
 	padding: var(--spacing-2) var(--spacing-2);
 	cursor: pointer;
 	transition: background-color 200ms ease-out, color 200ms ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .btn-blur {
 	backdrop-filter: blur(8px);
@@ -28,7 +31,7 @@ a:focus {
 }
 .btn.small {
 	padding: var(--spacing-1) var(--spacing-1);
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	min-width: 120px;
 }
 .btn-primary {

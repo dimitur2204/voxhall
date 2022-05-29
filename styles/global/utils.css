@@ -1,9 +1,6 @@
 main section:not(:last-child) {
 	margin-bottom: var(--section-spacing);
 }
-.container {
-	max-width: 1200px;
-}
 .text-uppercase {
 	text-transform: uppercase;
 }
@@ -43,6 +40,9 @@ main section:not(:last-child) {
 	.container {
 		width: auto;
 	}
+}
+.container {
+	max-width: 1200px;
 }
 .m-0 {
 	margin: 0 !important;

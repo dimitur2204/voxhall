@@ -129,9 +129,18 @@ video {
 	justify-content: center;
 	align-items: center;
 }
-
+#pictures .btn {
+	width: 170px !important;
+}
+#craft-beer .btn {
+	width: 170px !important;
+}
 #guide .blur-box {
 	/* Add the blur effect */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	backdrop-filter: blur(8px);
 	padding: var(--spacing-4);
 	width: 80%;
