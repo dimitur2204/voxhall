@@ -111,7 +111,7 @@ video {
 		url("../../public/photos.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 85vh;
+	height: 75vh;
 	display: flex;
 	align-items: flex-end;
 }
